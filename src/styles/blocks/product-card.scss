@@ -4,16 +4,28 @@
   flex-direction: column;
 
   width: 200px;
-  padding: 29px 14px 14px;
+  padding: 14px;
 
   border: 1px solid #f3f3f3;
   border-radius: 5px;
 
   &__img {
+    box-sizing: initial;
     width: 160px;
     height: 134px;
 
-    margin-bottom: 45px;
+    margin: 15px 0 45px;
+
+    transition: transform 400ms;
+
+    &:hover {
+      margin-top: 0;
+      margin-bottom: 30px;
+      padding: 12px 0;
+      border: 3px solid #f3f3f3;
+      border-radius: 5px;
+      transform: scale(1.2);
+    }
   }
 
   &__product-name {
@@ -65,6 +77,8 @@
 
     border: 1px solid $blue-link-color;
     border-radius: 5px;
+
+    transition: color 400ms;
 
     &:hover {
       color: $blue-link-color;
