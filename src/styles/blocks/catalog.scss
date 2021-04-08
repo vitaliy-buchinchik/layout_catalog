@@ -1,9 +1,7 @@
 .catalog {
-  display: flex;
+  display: grid;
   justify-content: center;
-  flex-wrap: wrap;
-
-  &__product-card {
-    margin: 50px 24px 0;
-  }
+  padding-top: 50px;
+  grid-template-columns: repeat($product-cards-per-row, $product-card-width);
+  gap: 50px $gap-between-cards;
 }

@@ -24,6 +24,8 @@
     text-decoration: none;
     color: $black-link-color;
 
+    transition: color 400ms;
+
     &:hover {
       color: $blue-link-color;
     }
